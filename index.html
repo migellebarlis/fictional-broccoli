@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL IS WELL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Petit+Formal+Script&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Birthstone&family=Chewy&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Petit+Formal+Script&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: beige;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+            grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+            column-gap: 5px;
+            row-gap: 5px;
+        }
+
+        .all-1 {
+            position: absolute;
+            top: -85px;
+            font-family: "Birthstone", cursive;
+            font-style: normal;
+            font-size: 250px;
+            color: #004aad;
+            -webkit-text-stroke: 4px #bfbfbf;
+        }
+
+        .all-2 {
+            position: absolute;
+            top: -91px;
+            left: -6px;
+            font-family: "Birthstone", cursive;
+            font-style: normal;
+            font-size: 250px;
+            z-index: -1;
+            color: black;
+            -webkit-text-stroke: 4px #febf00;
+        }
+
+        .sun {
+            position: absolute;
+            top: -62px;
+            left: 11px;
+            height: 123px;
+            z-index: -2;
+        }
+
+        .is {
+            position: absolute;
+            top: -16px;
+            left: 5px;
+            font-family: "Libre Bodoni", serif;
+            font-optical-sizing: auto;
+            font-style: italic;
+            font-size: 26px;
+        }
+
+        .star {
+            position: absolute;
+            top: -20px;
+            left: -8px;
+            height: 40px;
+            z-index: -1;
+        }
+
+        .well-1 {
+            position: absolute;
+            top: -12px;
+            font-size: 110px;
+            color: #f5be4a;
+            -webkit-text-stroke: 4px #ff3131;
+            font-family: "Chewy", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .well-2 {
+            position: absolute;
+            top: -17px;
+            left: 5px;
+            font-size: 110px;
+            z-index: -1;
+            color: #ff3131;
+            -webkit-text-stroke: 4px #5ce1e6;
+            font-family: "Chewy", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .rainbow {
+            position: absolute;
+            top: -13px;
+            right: 1px;
+            height: 44px;
+            width: 92px;
+            z-index: -2;
+        }
+
+        .keep-moving-forward {
+            position: absolute;
+            top: -2px;
+            left: -5px;
+            font-family: "Petit Formal Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 10px;
+            color: #004aad;
+        }
+
+        .arrow {
+            position: absolute;
+            top: -8px;
+            left: -13px;
+            height: 25px;
+        }
+
+        .flower {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div style="grid-column: 3 / 7; grid-row: 2 / 5; position: relative;">
+            <span class="all-1">All</span>
+            <span class="all-2">All</span>
+            <img src="sun.PNG" class="sun">
+        </div>
+        <div style="grid-column: 5; grid-row: 5; position: relative;">
+            <span class="is">is</span>
+            <img src="star.PNG" class="star">
+        </div>
+        <div style="grid-column: 3 / 7; grid-row: 5 / 7; position: relative;">
+            <span class="well-1">WELL</span>
+            <span class="well-2">WELL</span>
+            <img src="rainbow.PNG" class="rainbow">
+        </div>
+        <div style="grid-column: 4 / 7; grid-row: 7; position: relative;">
+            <span class="keep-moving-forward">Keep moving forward</span>
+        </div>
+        <div style="grid-column: 6; grid-row: 7; position: relative;">
+            <img src="arrow.PNG" class="arrow">
+        </div>
+        <div style="grid-column: 1 / 9; grid-row: 7 / 9; position: relative;">
+            <img src="flower.PNG" class="flower">
+        </div>
+    </div>
+</body>
+
+</html>
